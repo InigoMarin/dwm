@@ -129,7 +129,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_q,		killclient,	{0} },
 	{ MODKEY|ShiftMask,	XK_q,		spawn,		SHCMD("sysact") },
 	{ MODKEY,			XK_w,		spawn,		SHCMD("qutebrowser") },
-	{ MODKEY|ShiftMask,	XK_w,		spawn,		SHCMD("st -e sudo nmtui") },
+	{ MODKEY|ShiftMask,	XK_w,		spawn,		SHCMD("rofi -show window") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD("st -e lf") },
 	{ MODKEY,			XK_r,		spawn,		SHCMD("rofi -show drun") },
 	{ MODKEY|ShiftMask,	XK_r,		spawn,		SHCMD("st -e htop") },

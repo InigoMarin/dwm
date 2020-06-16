@@ -38,8 +38,11 @@ static Sp scratchpads[] = {
 };
 
 static const char *const autostart[] = {
+    "clipmenud",NULL,
 	"mpDris2", NULL,
+	"dunst", NULL,
 	NULL /* terminate */
+
 };
 
 /* tagging */

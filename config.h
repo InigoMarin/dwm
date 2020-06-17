@@ -193,7 +193,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_n,		spawn,		SHCMD("st -e newsboat") },
 	{ MODKEY|ShiftMask,	XK_n,		spawn,		SHCMD("nautilus") },
 	{ MODKEY,			XK_m,		spawn,		SHCMD("st -e ncmpcpp") },
-	{ MODKEY,		    XK_v,		spawn,		SHCMD("st -e pulsemixer; kill -44 $(pidof dwmblocks") },
+	{ MODKEY|ShiftMask,	XK_m,		spawn,		SHCMD("st -e neomutt") },
+	{ MODKEY|ShiftMask,	XK_v,		spawn,		SHCMD("st -e pulsemixer; kill -44 $(pidof dwmblocks") },
 	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc prev") },
 	{ MODKEY|ShiftMask,	XK_comma,	spawn,		SHCMD("mpc seek 0%") },
 	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc next") },
@@ -210,7 +211,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,	XK_Page_Down,shifttag,	{ .i = +1 } },
 
 	{ MODKEY,			XK_Insert,	spawn,		SHCMD("clipmenu") },
-	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom /usr/local/share/dwm/larbs.mom -Tpdf | zathura -") },
+	{ MODKEY,			XK_F1,		spawn,		SHCMD("st -e neomutt") },
 	{ MODKEY,			XK_F2,		spawn,		SHCMD("tutorialvids") },
 	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
 	{ MODKEY,			XK_F4,		spawn,		SHCMD("st -e pulsemixer; kill -44 $(pidof dwmblocks)") },

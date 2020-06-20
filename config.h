@@ -238,7 +238,9 @@ static Key keys[] = {
 	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
 	{ MODKEY|ShiftMask,	XK_Print,	spawn,		SHCMD("dmenurecord kill") },
 	{ MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },
-	{ MODKEY,			XK_Scroll_Lock,	spawn,	SHCMD("killall screenkey || screenkey &") },
+
+    { MODKEY,			XK_Scroll_Lock,	spawn,	SHCMD("slock & xset dpms force off; mpc pause; pauseallmpv") },
+    { MODKEY|ShiftMask,	XK_Scroll_Lock,	spawn,	SHCMD("killall screenkey || screenkey &") },
 
 	{ 0, XF86XK_AudioMute,		    spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
 	{ 0, XF86XK_AudioRaiseVolume,	spawn,		SHCMD("pamixer --allow-boost -i 3; kill -44 $(pidof dwmblocks)") },

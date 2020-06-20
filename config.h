@@ -145,9 +145,9 @@ static Key keys[] = {
 	{ MODKEY,			XK_q,		killclient,	{0} },
 	{ MODKEY|ShiftMask,	XK_q,		spawn,		SHCMD("sysact") },
 	{ MODKEY,			XK_w,		spawn,		SHCMD("qutebrowser") },
-	{ MODKEY|ShiftMask,	XK_w,		spawn,		SHCMD("rofi -show window") },
+	{ MODKEY|ShiftMask,	XK_w,		spawn,		SHCMD("dswitcher") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD("st -e lf") },
-	{ MODKEY,			XK_r,		spawn,		SHCMD("rofi -show drun") },
+	{ MODKEY,			XK_r,		spawn,		SHCMD("j4-dmenu-desktop") },
 	{ MODKEY|ShiftMask,	XK_r,		spawn,		SHCMD("st -e htop") },
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
 	{ MODKEY|ShiftMask,	XK_t,		setlayout,	{.v = &layouts[1]} }, /* bstack */

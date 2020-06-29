@@ -220,7 +220,7 @@ static Key keys[] = {
 
 	{ MODKEY,			XK_Insert,	spawn,		SHCMD("clipmenu") },
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("st -e neomutt") },
-	{ MODKEY,			XK_F2,		spawn,		SHCMD("tutorialvids") },
+	{ MODKEY,			XK_F2,		spawn,		SHCMD("kodi") },
 	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
 	{ MODKEY,			XK_F4,		spawn,		SHCMD("st -e pulsemixer; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
